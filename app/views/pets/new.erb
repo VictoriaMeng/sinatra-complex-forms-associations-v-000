@@ -7,4 +7,5 @@
 <h2>Choose an Owner</h2>
 <% Owner.all.each do |owner| %>
   <% binding.pry %>
+  <input type="checkbox" name="owner[:id]" id="<%=owner.id%>" value="<%=pet.id%>"><%=pet.name%></input>
 <% end %>
